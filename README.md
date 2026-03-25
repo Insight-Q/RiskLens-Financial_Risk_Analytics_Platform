@@ -1,2 +1,4 @@
-# Financial-Risk_Analytics
+# Financial-Risk-Analytics
+
 Loan Default Prediction - Data Analytics Project
+
