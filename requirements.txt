@@ -1,0 +1,14 @@
+# Read and analyze CSV/Excel files
+pandas
+
+# Connect Python to PostgreSQL
+sqlalchemy
+
+# PostgreSQL driver - required for sqlalchemy
+psycopg2
+
+# Build the dashboard UI/frontend
+streamlit
+
+# Display graphs and charts in dashboard
+plotly
