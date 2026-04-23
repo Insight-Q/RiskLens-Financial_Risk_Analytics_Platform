@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# RiskLens – Financial Risk Analytics Platform 📊
-=======
-# Financial-Risk-Analytics
+# RiskLens - Financial Risk Analytics Platform 📊
 
->>>>>>> main
+## Financial Risk Analytics
+
 Loan Default Prediction - Data Analytics Project
-
