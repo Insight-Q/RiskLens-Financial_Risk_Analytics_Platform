@@ -276,3 +276,5 @@ joblib
 ---
 
 *Built as a portfolio project demonstrating end-to-end data analytics and machine learning engineering.*
+## Author
+**Insight-Q**
