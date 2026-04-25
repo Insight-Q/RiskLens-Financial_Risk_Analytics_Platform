@@ -168,7 +168,7 @@ with st.sidebar:
 
     st.markdown("---")
 
-    income_options = ["All", "Low (<2k)", "Mid (2k–5k)", "High (5k–10k)", "Very High (10k+)"]
+    income_options = ["All", "Low (<2k)", "Mid (2k-5k)", "High (5k-10k)", "Very High (10k+)"]
     income_filter = st.selectbox("Monthly Income Tier", income_options)
 
     st.markdown("---")
@@ -189,7 +189,7 @@ df = df[(df["age"] >= age_range[0]) & (df["age"] <= age_range[1])]
 
 if income_filter != "All":
     bins   = [0, 2000, 5000, 10000, float("inf")]
-    labels = ["Low (<2k)", "Mid (2k–5k)", "High (5k–10k)", "Very High (10k+)"]
+    labels = ["Low (<2k)", "Mid (2k-5k)", "High (5k-10k)", "Very High (10k+)"]
     df["income_tier"] = pd.cut(df["MonthlyIncome"], bins=bins, labels=labels)
     df = df[df["income_tier"] == income_filter]
 
@@ -274,7 +274,7 @@ c1, c2 = st.columns(2)
 
 with c1:
     age_bins   = [0, 30, 45, 60, 200]
-    age_labels = ["Under 30", "30–45", "46–60", "60+"]
+    age_labels = ["Under 30", "30-45", "46-60", "60+"]
     df_plot = df.copy()
     df_plot["age_group"] = pd.cut(df_plot["age"], bins=age_bins, labels=age_labels)
     age_grp = (
