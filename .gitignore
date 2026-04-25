@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .env
 *.png
+.vscode/
+anaconda_projects/
