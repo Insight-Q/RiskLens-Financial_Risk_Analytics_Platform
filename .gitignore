@@ -4,3 +4,4 @@ __pycache__/
 .env
 models/best_model.pkl
 ~$*
+data/cs-training.csv
