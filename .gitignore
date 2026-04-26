@@ -5,3 +5,5 @@ __pycache__/
 models/best_model.pkl
 ~$*
 data/cs-training.csv
+.vscode/
+anaconda_projects/
