@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏦 RiskLens - Financial Risk Analytics Platform
 
 > **End-to-end loan default prediction system** built on 150,000 real-world credit records.  
@@ -15,33 +14,6 @@ The project mirrors how a real bank's risk analytics team would approach credit 
 ---
 
 ## ⭐ Key Results
-=======
-# 🏦 RiskLens — Financial Risk Analytics Platform
-
-> **End-to-end loan default prediction system** built on 150,000 real-world credit records.  
-> Combines machine learning, explainable AI, interactive dashboards, and REST API — production-ready architecture.
-
----
-
-## 🚀 Live Demo
-
-| Component | Link |
-|---|---|
-| 📊 Streamlit Dashboard | *Coming soon* |
-| ⚡ Flask REST API | *Coming soon* |
-
----
-
-## 📌 Project Overview
-
-RiskLens is a full-stack financial risk analytics platform that predicts the probability of a customer defaulting on a loan. The system ingests raw credit data, performs deep exploratory analysis, trains an optimized machine learning model, and serves predictions through both an interactive dashboard and a REST API.
-
-The project mirrors how a real bank's risk analytics team would approach credit risk modeling — from raw data to business-ready insights.
-
----
-
-## 🎯 Key Results
->>>>>>> origin/main
 
 | Metric | Value |
 |---|---|
@@ -54,7 +26,6 @@ The project mirrors how a real bank's risk analytics team would approach credit 
 
 ---
 
-<<<<<<< HEAD
 ## 🖥️ Dashboard Preview
 
 ### 1️⃣ Analytics Dashboard Overview
@@ -77,19 +48,6 @@ The project mirrors how a real bank's risk analytics team would approach credit 
 ---
 
 ## Tech Stack
-=======
-## 🔍 Key Findings
-
-- **Late payment history** is the strongest predictor of loan default — stronger than income or debt ratio alone
-- **Low income customers** (below $3,000/month) show significantly higher default rates across all age groups
-- **Younger borrowers (18–30)** carry the highest risk due to lower financial stability and limited credit history
-- Dataset is heavily imbalanced — **93% non-default vs 7% default** — handled using SMOTE before model training
-- **Debt ratio above 0.6** is a strong warning signal — customers in this range are far more likely to default
-
----
-
-## 🛠️ Tech Stack
->>>>>>> origin/main
 
 ### Data & Machine Learning
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -122,7 +80,6 @@ RiskLens-Financial_Risk_Analytics_Platform/
 ├── 📂 notebooks/
 │   ├── 01_EDA_analysis.ipynb            ← Data cleaning, EDA, 6 charts
 │   ├── 02_model_training.ipynb          ← ML models, SMOTE, SHAP
-<<<<<<< HEAD
 │   ├── 03_business_insights.ipynb       ← Risk scoring, recommendations
 |   └── load_data.py                     ← CSV to PostgreSQL loader
 │
@@ -132,30 +89,16 @@ RiskLens-Financial_Risk_Analytics_Platform/
 │   ├── 03_income_analysis.sql           ← Income tier analysis and default patterns
 │   ├── 04_export_results.sql            ← Export processed query results
 │   └── analysis.sql                     ← Advanced SQL queries
-=======
-│   └── 03_business_insights.ipynb       ← Risk scoring, recommendations
-│
-├── 📂 sql/
-│   ├── load_data.py                     ← CSV → PostgreSQL loader
-│   └── 02_analysis.sql                  ← Advanced SQL queries
->>>>>>> origin/main
 │
 ├── 📂 dashboard/
 │   └── app.py                           ← Streamlit interactive dashboard
 │
 ├── 📂 models/
-<<<<<<< HEAD
 │   ├── best_model_compressed.joblib     ← Trained Random Forest model
 │   └── feature_names.pkl                ← List of feature names used during model training
 │
 ├── 📂 api/                              
 │   └── app.py                           ← Flask REST API (/predict, /health endpoints)
-=======
-│   └── best_model.pkl                   ← Trained Random Forest model
-│
-├── 📂 api/                              ← Flask REST API
-│   └── app.py                           ← /predict, /health endpoints
->>>>>>> origin/main
 │
 ├── requirements.txt
 └── README.md
@@ -163,47 +106,6 @@ RiskLens-Financial_Risk_Analytics_Platform/
 
 ---
 
-<<<<<<< HEAD
-=======
-## ⚡ API Reference
-
-### `POST /predict`
-Predicts loan default risk for a single customer.
-
-**Request Body:**
-```json
-{
-  "age": 35,
-  "MonthlyIncome": 5000,
-  "DebtRatio": 0.4,
-  "RevolvingUtilizationOfUnsecuredLines": 0.3,
-  "NumberOfOpenCreditLinesAndLoans": 4,
-  "NumberOfTimes90DaysLate": 0,
-  "NumberOfTime30-59DaysPastDueNotWorse": 1,
-  "NumberOfTime60-89DaysPastDueNotWorse": 0,
-  "NumberRealEstateLoansOrLines": 1,
-  "NumberOfDependents": 2
-}
-```
-
-**Response:**
-```json
-{
-  "risk_score": 42.5,
-  "risk_label": "Medium Risk",
-  "default_probability": 0.425
-}
-```
-
-### `GET /health`
-Returns API status.
-
-### `GET /model-info`
-Returns model name, features used, and performance metrics.
-
----
-
->>>>>>> origin/main
 ## 🗄️ SQL Analysis
 
 Advanced PostgreSQL queries built on the 150k row dataset:
@@ -234,22 +136,14 @@ Full SQL scripts available in `/sql/` folder.
 
 - 📊 Default rate by age group
 - 💰 Monthly income distribution
-<<<<<<< HEAD
 - 📉 Debt ratio boxplot - default vs non-default
-=======
-- 📉 Debt ratio boxplot — default vs non-default
->>>>>>> origin/main
 - 🔥 Feature correlation heatmap
 - ⚖️ Target class distribution
 - 📈 Default rate by income tier
 
 ---
 
-<<<<<<< HEAD
 ## Model Pipeline
-=======
-## 🧠 Model Pipeline
->>>>>>> origin/main
 
 ```
 Raw Data (150k rows)
@@ -277,7 +171,6 @@ Model Saved → best_model.pkl
 
 Derived from model insights and EDA findings:
 
-<<<<<<< HEAD
 1. **Flag high risk customers early** - risk score above 60 should trigger manual review before loan approval
 2. **Income verification** - customers earning below $3,000/month require stricter checks
 3. **Late payment alerts** - 2+ late payments should trigger automated risk review
@@ -287,17 +180,6 @@ Derived from model insights and EDA findings:
 ---
 
 ## How to Run
-=======
-1. **Flag high risk customers early** — risk score above 60 should trigger manual review before loan approval
-2. **Income verification** — customers earning below $3,000/month require stricter checks
-3. **Late payment alerts** — 2+ late payments should trigger automated risk review
-4. **Age-based credit limits** — younger borrowers (18–30) should receive smaller initial credit limits
-5. **Debt ratio threshold** — customers with debt ratio above 0.6 should face stricter loan criteria
-
----
-
-## 🚀 How to Run
->>>>>>> origin/main
 
 ### 1. Clone the repository
 ```bash
@@ -324,11 +206,7 @@ python app.py
 
 ### 5. Setup PostgreSQL
 ```bash
-<<<<<<< HEAD
 cd notebooks
-=======
-cd sql
->>>>>>> origin/main
 python load_data.py
 ```
 
@@ -357,16 +235,11 @@ joblib
 
 ## 📂 Dataset
 
-<<<<<<< HEAD
 **Give Me Some Credit** - Kaggle Competition Dataset  
-=======
-**Give Me Some Credit** — Kaggle Competition Dataset  
->>>>>>> origin/main
 🔗 [https://www.kaggle.com/c/GiveMeSomeCredit](https://www.kaggle.com/c/GiveMeSomeCredit)
 
 - 150,000 customer records
 - 11 financial features
-<<<<<<< HEAD
 - Binary classification target - loan default prediction
 
 ---
@@ -374,17 +247,7 @@ joblib
 
 ## Author
 **Insight-Q**
-=======
-- Binary classification target — loan default prediction
->>>>>>> origin/main
-
----
 
 *Built as a portfolio project demonstrating end-to-end data analytics and machine learning engineering.*
-<<<<<<< HEAD
 
 ---
-=======
-## Author
-**Insight-Q**
->>>>>>> origin/main
