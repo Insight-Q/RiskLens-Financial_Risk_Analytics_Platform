@@ -13,7 +13,7 @@ The project mirrors how a real bank's risk analytics team would approach credit 
 
 ---
 
-## Key Results
+## ⭐ Key Results
 
 | Metric | Value |
 |---|---|
@@ -97,8 +97,8 @@ RiskLens-Financial_Risk_Analytics_Platform/
 │   ├── best_model_compressed.joblib     ← Trained Random Forest model
 │   └── feature_names.pkl                ← List of feature names used during model training
 │
-├── 📂 api/                              ← Flask REST API
-│   └── app.py                           ← /predict, /health endpoints
+├── 📂 api/                              
+│   └── app.py                           ← Flask REST API (/predict, /health endpoints)
 │
 ├── requirements.txt
 └── README.md
@@ -143,7 +143,7 @@ Full SQL scripts available in `/sql/` folder.
 
 ---
 
-## 🧠 Model Pipeline
+## Model Pipeline
 
 ```
 Raw Data (150k rows)
@@ -179,7 +179,7 @@ Derived from model insights and EDA findings:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -247,4 +247,9 @@ joblib
 
 ## Author
 **Insight-Q**
+
+---
+
 *Built as a portfolio project demonstrating end-to-end data analytics and machine learning engineering.*
+
+---
