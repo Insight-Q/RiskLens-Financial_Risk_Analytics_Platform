@@ -1,7 +1,7 @@
 # 🏦 RiskLens - Financial Risk Analytics Platform
 
 > **End-to-end loan default prediction system** built on 150,000 real-world credit records.  
-> Combines machine learning, explainable AI, interactive dashboards, and REST API - production-ready architecture.
+> Combines machine learning, interactive dashboards, and REST API - production-ready architecture.
 
 ---
 
