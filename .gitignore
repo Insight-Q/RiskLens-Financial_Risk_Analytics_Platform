@@ -7,3 +7,5 @@ models/best_model.pkl
 data/cs-training.csv
 .vscode/
 anaconda_projects/
+api/__pycache__/
+api/best_model.pkl
